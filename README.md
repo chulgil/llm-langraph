@@ -35,3 +35,22 @@ python -m ipykernel install --user --name=llm-langraph --display-name "Python (l
 
 - 이후 .ipynb에서 사용방법은 : 상단메뉴에서
 - Kernel → Change kernel → Python (llm-langraph)
+
+### .env 환경설정파일
+
+> 프로젝트 폴더에 .env파일 생성한 후 아래 인증정보 넣기
+
+```bash
+
+OPENAI_API_KEY=본인인증키
+PINECONE_API_KEY=본인인증키
+UPSTAGE_API_KEY=본인인증키
+LANGCHAIN_API_KEY=
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_PROJECT=default
+LANGSMITH_PROJECT=default
+LANGSMITH_API_KEY=본인인증키
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+TAVILY_API_KEY=본인인증키
+
+```
